@@ -44,15 +44,17 @@ body {
 	font-size: var(--fontsize);
 	line-height: var(--lineheight);
 	color: var(--textcolor);
-	min-width: 320px;
+	/*min-width: 320px;*/
 	position: relative;
 	overflow-x: hidden;
+
 }
 
 .container{
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
+
 }
 
 /* USER STYLES */
@@ -123,6 +125,9 @@ body {
   padding-top: 35px;
   padding-bottom: 16px;
   border-bottom: 1px solid #FFFFFF;
+}
+.menu__btn{
+  display: none;
 }
 .menu__list {
   display: flex;
@@ -643,7 +648,7 @@ background:var(--accent);
   line-height: 130%;
   color: #FFFFFF;
 }
-.copyright {
+.footer__copyright {
   font-size: 14px;
   line-height: 130%;
   color: #FFFFFF;
@@ -672,4 +677,6 @@ background:var(--accent);
   line-height: 130%;
   color: #FFFFFF;
   opacity: 0.8;
+
 }
+

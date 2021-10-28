@@ -7,57 +7,251 @@
 
 /* lg <= Extra large (xl) */
 @media (max-width : 1200px) {
+  .menu__item{
+    margin-right: 70px;
+  }
+}
+
+
+@media (max-width : 1140px) {
+  .direction__inner{
+
+    grid-template-columns: repeat(3,1fr );
+    grid-gap: 20px;
+  }
+  .direction__img{
+    width: 100%;
+  }
+}
+@media (max-width: 1070px) {
+  .travel-info__items{
+    grid-template-columns:repeat(3,1fr );
+    grid-gap: 40px;
+  }
 
 }
 
 /* md <= Large (lg) */
 @media (max-width : 992px) {
+  .popular__link{
+    min-height: 200px;
+  }
+  .popular__items{
+    grid-gap: 10px;
+  }
+}
+@media (max-width : 930px) {
+  .menu__item{
+    margin-right: 60px;
+  }
 
+}
+@media (max-width : 878px) {
+  .menu__item{
+    margin-right: 60px;
+  }
+  .header__title{
+    font-size: 70px;
+}
+
+@media (max-width : 800px) {
+
+  .header__contacts-text{
+    display: none;
+  }
+  .menu__item{
+    margin-right: 60px;
+  }
+  .popular__link:nth-child(3),
+  .popular__link:nth-child(6){
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .popular__items{
+    grid-template-columns:repeat(2,1fr );
+  }
+  .popular__link{
+    min-height: 320px;
+  }
+  .popular{
+    padding: 50px 0;
+  }
 }
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
+  .menu__item{
+    margin-right: 60px;
+  }
+    .header__title{
+      font-size: 70px;
+    }
+  }
+@media (max-width : 760px) {
+  .menu__item{
+    margin-right: 40px;
+  }
+  .header__title{
+    font-size: 70px;
+  }
+    .travel-info__items{
+      grid-template-columns:repeat(2,1fr );
+      grid-gap: 30px;
+  }
+@media (max-width : 686px) {
+
+  .header__title{
+    font-size: 55px;
+  }
+
+
+}
+@media (max-width : 602px) {
+  .menu__item{
+    margin-right: 20px;
+  }
+
+}
 
 }
 
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
+  .header__title{
+    font-size: 50px;
+  }
+  .menu__btn{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    border: none;
+
+    background-color: transparent;
+    position: absolute;
+    overflow: hidden;
+    right: 10px;
+    top: 107px;
+  }
+
+  .menu__btn::after,
+  .menu__btn::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color:#fff;
+  }
+  .menu__btn::after{
+    top: 0;
+  }
+  .menu__btn::before{
+    bottom: 0;
+  }
+  .menu__btn span{
+    display: block;
+    height: 2px;
+    background-color: #fff;
+  }
+  .menu__list{
+    transform:translateY(-200%);
+    display: block;
+    background-color:var(--accent);
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all .3s;
+  }
+  .menu__list.menu__list--active{
+    transform:translateY(0%);
+
+  }
+  .menu__link{
+    padding: 10px;
+    display: block;
+    text-align: center;
+
+  }
+  .logo__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .header__top{
+  flex-wrap: wrap;
+  border: none;
+
+
+  }
+  .menu{
+    border:none;
+
+  }
+  .header__btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  @media (max-width:560px){
+    .direction__inner{
+
+      grid-template-columns: repeat(2,1fr );
+      grid-gap: 10px;
+    }
+    .direction__img{
+      width: 100%;
+    }
+    .direction{
+      padding: 50px 0;
+  }
+  .popular__items{
+    grid-template-columns:repeat(1,1fr );
+  }
+}
+  @media (max-width: 531px) {
+  .header__contacts-phone{
+    margin-left: 0;
+  }
+    .logo__img{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    .header__btn{
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    .header__descr{
+      margin-left: 20px;
+    }
+  }
+
+
+@media (max-width: 500px) {
+  .header__title{
+    font-size: 42px;
+  }
+  .title{
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .travel-info__items{
+    grid-template-columns:repeat(1,1fr );
+    grid-gap: 20px;
+  }
+
+
+
 
 }
+@media (max-width : 425px) {
+  .header__title{
+    font-size: 30px;
+  }
+
+  }
 
 
-/* === MOBILE FIRST === */
 
-/* Custom (xs) */
-@media (min-width : 0) {
 
-}
 
-/* Small (sm) */
-@media (min-width : 576px) {
-
-}
-
-/* Medium (md) */
-@media (min-width : 768px) {
-
-}
-
-/* Large (lg) */
-@media (min-width : 992px) {
-
-}
-
-/* Extra large (xl) */
-@media (min-width : 1200px) {
-	.text {
-		font-size: 18px;
-	}
-}
-
-/* Extra extra large (xxl) */
-@media (min-width : 1400px) {
-	.text {
-		font-size: 22px;
-	}
-}
