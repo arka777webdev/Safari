@@ -15,29 +15,47 @@
 
 @media (max-width : 1140px) {
   .direction__inner{
-
     grid-template-columns: repeat(3,1fr );
     grid-gap: 20px;
   }
   .direction__img{
     width: 100%;
   }
-}
-@media (max-width: 1070px) {
+  .about__inner {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .gallery__item-inner{
+    grid-template-columns: repeat(2,1fr );
+    }
+    .gallery__item-img{
+      width: 100%;
+    }
+@media (max-width: 1070px){
   .travel-info__items{
     grid-template-columns:repeat(3,1fr );
     grid-gap: 40px;
+  }
+  .tour__info{
+
+    grid-template-columns: repeat(3, 1fr );
+    grid-gap: 30px 15px;
   }
 
 }
 
 /* md <= Large (lg) */
-@media (max-width : 992px) {
+@media (max-width : 990px) {
   .popular__link{
     min-height: 200px;
   }
   .popular__items{
     grid-gap: 10px;
+  }
+  .tour__info{
+
+    grid-template-columns: repeat(3, 1fr );
+    grid-gap: 30px 15px;
   }
 }
 @media (max-width : 930px) {
@@ -75,6 +93,64 @@
   }
   .popular{
     padding: 50px 0;
+  }
+  .map{
+    padding-bottom: 50px;
+  }
+  .map__iframe{
+    height: 400px;
+  }
+  .about__inner {
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .about__popup{
+    min-height: 400px;
+  }
+  .about{
+    padding-bottom: 50px;
+  }
+  .gallery{
+    padding-bottom: 50px;
+  }
+  .tour{
+    padding: 50px 0;
+  }
+  .tour__box{
+    column-count:1;
+  }
+  .tour__title{
+    margin-bottom: 40px;
+  }
+  .tour__info{
+    grid-template-columns: repeat(2,1fr)
+  }
+  .booking{
+    padding: 50px 0;
+  }
+  .booking__input{
+    width: 100%;
+  }
+  .booking__label{
+    width: 100%;
+    margin-top: -192px;
+    margin-left: 50px;
+  }
+  .footer{
+    padding: 50px 0;
+  }
+  .footer__logo{
+    margin-bottom: 40px;
+  }
+  .footer__items{
+    display: block;
+    text-align: center;
+  }
+  .footer__item{
+    margin-bottom: 40px;
+  }
+  .footer__item-text{
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -206,6 +282,17 @@
   .popular__items{
     grid-template-columns:repeat(1,1fr );
   }
+    .gallery__item-inner{
+      grid-template-columns: repeat(1,1fr );
+  }
+  .gallery__title{
+    width: 100%;
+    text-align: left;
+  }
+  .gallery__top{
+    flex-wrap: wrap;
+
+  }
 }
   @media (max-width: 531px) {
   .header__contacts-phone{
@@ -241,7 +328,12 @@
   }
 
 
+@media (max-width: 460px){
 
+  .tour__info{
+    grid-template-columns:repeat(1,1fr );
+  }
+}
 
 }
 @media (max-width : 425px) {
@@ -250,8 +342,12 @@
   }
 
   }
+@media (max-width : 340px) {
+  .about__popup{
+    min-height: 280px;
+  }
 
-
+  }
 
 
 
